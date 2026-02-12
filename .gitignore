@@ -45,6 +45,7 @@ models/
 
 data/raw/harvest/_merged/spain_covid_broad_ALL.csv
 data/raw/harvest/_merged/spain_covid_broad_ALL.txt
+data/interim/embeddings/spain_covidMHstrict_occurrences_2020-03_2021-03.parquet
 
 # Project Plans (Private)
 MASTER_PLAN.md
