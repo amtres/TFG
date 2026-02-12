@@ -1,0 +1,7 @@
+﻿country: SP
+sources: [gdelt]
+time_unit: quarterly
+pilot_window: 2020-03-01 to 2020-03-31
+full_window: 2019-01-01 to 2023-12-31
+media_list: data/media_list.csv
+keywords_file: data/metadata/keywords_mh.txt

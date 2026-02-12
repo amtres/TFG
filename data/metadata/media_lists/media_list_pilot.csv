@@ -1,0 +1,9 @@
+﻿domain,type,active,rss_url,selector_body
+20minutos.es,digital,false,https://www.20minutos.es/rss,
+www.20minutos.es,digital,false,https://www.20minutos.es/rss,
+eldiario.es,digital,true,https://www.eldiario.es/rss,
+www.eldiario.es,digital,true,https://www.eldiario.es/rss,
+lavanguardia.com,national,true,https://www.lavanguardia.com/rss/home.xml,
+europapress.es,wire,true,https://www.europapress.es/rss/rss.aspx,
+elconfidencial.com,digital,true,https://rss.elconfidencial.com/espana/,
+www.elconfidencial.com,digital,true,https://rss.elconfidencial.com/espana/,

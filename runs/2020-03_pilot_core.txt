@@ -1,0 +1,6 @@
+﻿DATE: 2020-03 pilot core test
+media_list: data/metadata/media_lists/media_list_pilot_core.csv
+keyword: covid / coronavirus / pandemia
+source: gdelt
+filter: mh_v2_strict_covidOK (MAX_CHARS=6000 + covid co-occurrence)
+notes: good extraction; few skipped_no_text
