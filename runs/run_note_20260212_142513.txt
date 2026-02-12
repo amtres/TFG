@@ -6,3 +6,6 @@
   data/interim/datasets/spain_covidMHstrict_2020-03_2021-03_ALL.txt
 - COVID broad (ALL) dataset is not stored in GitHub due to >100MB limit.
   Backup location: Google Drive (TFG data backup folder) as a ZIP.
+
+Run Note (20260212_2050)
+- parquet file de embeddings subido tmb al drive due to >100MB limit en GitHub.
