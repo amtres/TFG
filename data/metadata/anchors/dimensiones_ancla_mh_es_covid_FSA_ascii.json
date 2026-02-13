@@ -1,0 +1,297 @@
+{
+  "funcional": {
+    "description": "Funcionamiento cotidiano y recursos formales: servicios sanitarios/psicológicos, intervención, acceso, rutinas, impacto laboral (ERTE/teletrabajo) como carga funcional.",
+    "anchors": [
+      {
+        "keyword": "psicologo",
+        "sentence": "El psicologo recomienda pautas para manejar la ansiedad durante la pandemia."
+      },
+      {
+        "keyword": "psiquiatra",
+        "sentence": "El psiquiatra ajusto la medicacion por un empeoramiento de sintomas."
+      },
+      {
+        "keyword": "terapia",
+        "sentence": "La terapia online se expandio para mantener la atencion psicologica."
+      },
+      {
+        "keyword": "consulta",
+        "sentence": "Una consulta a tiempo permite detectar problemas antes de que empeoren."
+      },
+      {
+        "keyword": "atencion primaria",
+        "sentence": "La atencion primaria derivo casos de salud mental a especialistas."
+      },
+      {
+        "keyword": "salud publica",
+        "sentence": "La salud publica incorporo programas de apoyo psicologico comunitario."
+      },
+      {
+        "keyword": "intervencion",
+        "sentence": "La intervencion temprana reduce el riesgo de cronificacion del malestar."
+      },
+      {
+        "keyword": "tratamiento",
+        "sentence": "El tratamiento combina apoyo psicologico y seguimiento clinico."
+      },
+      {
+        "keyword": "medicacion",
+        "sentence": "La medicacion puede ser necesaria cuando los sintomas son severos."
+      },
+      {
+        "keyword": "ansiolitico",
+        "sentence": "El uso de ansioliticos aumento en algunos periodos de confinamiento."
+      },
+      {
+        "keyword": "antidepresivo",
+        "sentence": "Los antidepresivos se prescriben cuando la depresion es persistente."
+      },
+      {
+        "keyword": "diagnostico",
+        "sentence": "El diagnostico se complica cuando el sistema sanitario esta saturado."
+      },
+      {
+        "keyword": "seguimiento",
+        "sentence": "El seguimiento telefonico permite continuidad asistencial durante restricciones."
+      },
+      {
+        "keyword": "teleterapia",
+        "sentence": "La teleterapia facilito el acceso cuando no se podia acudir presencialmente."
+      },
+      {
+        "keyword": "linea",
+        "sentence": "Una linea de ayuda ofrece orientacion psicologica en momentos criticos."
+      },
+      {
+        "keyword": "protocolo",
+        "sentence": "El protocolo de atencion prioriza casos urgentes de crisis emocional."
+      },
+      {
+        "keyword": "recursos",
+        "sentence": "Los recursos de salud mental resultan insuficientes ante el aumento de demanda."
+      },
+      {
+        "keyword": "saturacion",
+        "sentence": "La saturacion sanitaria retrasa citas y empeora el malestar."
+      },
+      {
+        "keyword": "rutina",
+        "sentence": "Recuperar una rutina diaria mejora el funcionamiento y el animo."
+      },
+      {
+        "keyword": "habitos",
+        "sentence": "Mantener habitos de sueno y actividad ayuda a sostener el equilibrio mental."
+      },
+      {
+        "keyword": "teletrabajo",
+        "sentence": "El teletrabajo sin limites claros incrementa la carga mental."
+      },
+      {
+        "keyword": "erte",
+        "sentence": "El ERTE genero incertidumbre economica y estres en muchas familias."
+      },
+      {
+        "keyword": "desempleo",
+        "sentence": "El desempleo prolongado se asocia a ansiedad y perdida de autoestima."
+      },
+      {
+        "keyword": "precariedad",
+        "sentence": "La precariedad laboral aumenta el riesgo de malestar psicologico."
+      },
+      {
+        "keyword": "conciliacion",
+        "sentence": "La conciliacion familiar se vuelve mas dificil con escuelas cerradas."
+      },
+      {
+        "keyword": "carga mental",
+        "sentence": "La carga mental se acumula por el trabajo, los cuidados y la incertidumbre."
+      }
+    ]
+  },
+  "social": {
+    "description": "Relaciones sociales y contexto comunitario: aislamiento, convivencia, apoyo social, redes, familia y violencia doméstica.",
+    "anchors": [
+      {
+        "keyword": "aislamiento",
+        "sentence": "El aislamiento social prolongado afecta al animo y la motivacion."
+      },
+      {
+        "keyword": "soledad",
+        "sentence": "La soledad prolongada se asocia a un peor estado de animo."
+      },
+      {
+        "keyword": "confinamiento",
+        "sentence": "El confinamiento intensifico tensiones familiares en algunos hogares."
+      },
+      {
+        "keyword": "convivencia",
+        "sentence": "La convivencia forzada puede aumentar discusiones y estres diario."
+      },
+      {
+        "keyword": "familia",
+        "sentence": "La familia puede ser soporte o fuente de estres segun el contexto."
+      },
+      {
+        "keyword": "pareja",
+        "sentence": "La pareja afronta presion extra por incertidumbre y problemas economicos."
+      },
+      {
+        "keyword": "hijos",
+        "sentence": "Los hijos perciben la tension emocional y los cambios de rutina."
+      },
+      {
+        "keyword": "mayores",
+        "sentence": "La preocupacion por mayores incrementa la carga emocional del hogar."
+      },
+      {
+        "keyword": "apoyo",
+        "sentence": "El apoyo social protege frente al estres y la ansiedad."
+      },
+      {
+        "keyword": "red social",
+        "sentence": "La red social se reduce con restricciones y empeora la sensacion de soledad."
+      },
+      {
+        "keyword": "amigos",
+        "sentence": "Mantener contacto con amigos reduce el aislamiento emocional."
+      },
+      {
+        "keyword": "comunidad",
+        "sentence": "La comunidad organiza redes de ayuda para personas vulnerables."
+      },
+      {
+        "keyword": "solidaridad",
+        "sentence": "La solidaridad vecinal ayuda a sostener el bienestar en crisis."
+      },
+      {
+        "keyword": "violencia",
+        "sentence": "La violencia de genero se volvio mas dificil de denunciar en confinamiento."
+      },
+      {
+        "keyword": "maltrato",
+        "sentence": "El maltrato psicologico puede aumentar con el aislamiento del entorno."
+      },
+      {
+        "keyword": "conflicto",
+        "sentence": "Los conflictos domesticos se agravan cuando no hay espacios de escape."
+      },
+      {
+        "keyword": "cuidadores",
+        "sentence": "Los cuidadores sufren estres adicional por la sobrecarga domestica."
+      },
+      {
+        "keyword": "duelo",
+        "sentence": "El duelo se complica cuando no se puede despedir a los seres queridos."
+      },
+      {
+        "keyword": "despedida",
+        "sentence": "La falta de despedida dificulta procesar el duelo de manera saludable."
+      },
+      {
+        "keyword": "luto",
+        "sentence": "El luto se vive con menos apoyo cuando hay limitaciones de reunion."
+      }
+    ]
+  },
+  "afectiva": {
+    "description": "Estados emocionales y síntomas psicológicos: ansiedad, miedo, depresión, trauma, insomnio y crisis.",
+    "anchors": [
+      {
+        "keyword": "salud mental",
+        "sentence": "La salud mental se ha resentido durante la pandemia y el confinamiento."
+      },
+      {
+        "keyword": "ansiedad",
+        "sentence": "La ansiedad se disparo con el aumento de contagios y la falta de certezas."
+      },
+      {
+        "keyword": "miedo",
+        "sentence": "El miedo al contagio condiciona la vida diaria y las relaciones sociales."
+      },
+      {
+        "keyword": "angustia",
+        "sentence": "La angustia se refleja en sintomas fisicos y pensamientos repetitivos."
+      },
+      {
+        "keyword": "panico",
+        "sentence": "Algunas personas sufren panico al escuchar sintomas o leer nuevas cifras."
+      },
+      {
+        "keyword": "incertidumbre",
+        "sentence": "La incertidumbre sobre el futuro incrementa la tension psicologica."
+      },
+      {
+        "keyword": "estres",
+        "sentence": "El estres aumenta por la convivencia forzada y la presion laboral."
+      },
+      {
+        "keyword": "nerviosismo",
+        "sentence": "El nerviosismo crece cuando cambian las normas y se prolongan restricciones."
+      },
+      {
+        "keyword": "depresion",
+        "sentence": "La depresion se agrava cuando se reduce el contacto social y la actividad."
+      },
+      {
+        "keyword": "tristeza",
+        "sentence": "La tristeza sostenida se acentua con el aislamiento y las malas noticias."
+      },
+      {
+        "keyword": "desanimo",
+        "sentence": "El desanimo aumenta cuando se encadenan perdidas y restricciones."
+      },
+      {
+        "keyword": "apatia",
+        "sentence": "La apatia aparece cuando se pierde la motivacion y el horizonte de mejora."
+      },
+      {
+        "keyword": "desesperanza",
+        "sentence": "La desesperanza crece al no ver una salida rapida a la crisis."
+      },
+      {
+        "keyword": "culpa",
+        "sentence": "La culpa aparece cuando se atribuyen los problemas a fallos personales."
+      },
+      {
+        "keyword": "insomnio",
+        "sentence": "El insomnio se volvio mas comun durante los meses de confinamiento."
+      },
+      {
+        "keyword": "pesadillas",
+        "sentence": "Las pesadillas aparecen a veces tras experiencias estresantes o traumaticas."
+      },
+      {
+        "keyword": "fatiga",
+        "sentence": "La fatiga mental aparece con la sobreexposicion a noticias y preocupaciones."
+      },
+      {
+        "keyword": "irritabilidad",
+        "sentence": "La irritabilidad aumenta cuando se duerme mal y hay presion diaria."
+      },
+      {
+        "keyword": "trauma",
+        "sentence": "El trauma puede aparecer tras experiencias hospitalarias o muertes inesperadas."
+      },
+      {
+        "keyword": "postraumatico",
+        "sentence": "Algunas personas desarrollan estres postraumatico tras la enfermedad o la UCI."
+      },
+      {
+        "keyword": "crisis",
+        "sentence": "Una crisis emocional puede desencadenarse tras una perdida o aislamiento extremo."
+      },
+      {
+        "keyword": "suicidio",
+        "sentence": "Las alertas por suicidio aumentan cuando se acumulan estres y desesperanza."
+      },
+      {
+        "keyword": "autolesion",
+        "sentence": "La autolesion puede aparecer como forma de regular un dolor emocional intenso."
+      },
+      {
+        "keyword": "ideacion",
+        "sentence": "La ideacion suicida requiere atencion inmediata y apoyo profesional."
+      }
+    ]
+  }
+}
