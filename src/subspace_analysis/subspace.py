@@ -212,7 +212,7 @@ class KSelector:
             X_boot = X_boot - np.mean(X_boot, axis=0) 
             
             # CÓDIGO VIEJO (FRÁGIL)
-            _, s_boot, _ = np.linalg.svd(X_boot, full_matrices=False)
+            # _, s_boot, _ = np.linalg.svd(X_boot, full_matrices=False)
 
             # CÓDIGO NUEVO (ROBUSTO)
             # Usamos scipy con el driver 'gesvd' que NUNCA falla por convergencia
