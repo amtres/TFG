@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-02-15T16:41:08.133788",
+  "global_parameters": {
+    "WINDOW_MONTHS": 3,
+    "STEP_MONTHS": 1,
+    "N_MIN_OCCURRENCES": 1,
+    "LOW_DENSITY_FLAG": 30,
+    "VARIANTS": [
+      "baseline",
+      "dapt"
+    ],
+    "STRATEGIES": [
+      "penultimate",
+      "last4_concat"
+    ],
+    "DIMENSIONS": [
+      "funcional",
+      "social",
+      "afectiva"
+    ],
+    "SEED": 42,
+    "B_HORN": 20,
+    "B_BOOT": 20,
+    "CENTERING": true
+  },
+  "anchors_run_id": "9d1f8c3ee9ab5bd5b87c6cb28a972686",
+  "model_fingerprints": {
+    "baseline": "dccuchile/bert-base-spanish-wwm-uncased",
+    "dapt": "dapt_local_.\\models\\beto_dapt_spain_MHstrict_2020-03_2021-03_e1"
+  },
+  "valid_windows_count": 11,
+  "k_selection_method": "min(Horn Parallel Analysis, Bootstrap 5th Percentile Stability)",
+  "tolerances": {
+    "lowdin_orthonormality": "Frobenius < 1e-3",
+    "singular_values": "validity check"
+  }
+}
