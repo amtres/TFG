@@ -11,3 +11,15 @@ playwright
 readability-lxml
 justext
 pytest
+orjson
+dotenv
+fake_useragent
+tenacity
+curl_cffi
+feedparser
+pydantic
+pydantic_settings
+trafilatura
+bs4
+nbformat 
+nbconvert
