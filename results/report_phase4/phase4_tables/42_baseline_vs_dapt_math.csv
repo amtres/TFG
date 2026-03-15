@@ -1,0 +1,9 @@
+metric,strategy,mean_delta,wilcoxon_stat,p_value,significant
+k,penultimate,-18.0,0.0,0.0009765625,True
+k,last4_concat,-36.45454545454545,0.0,0.0009765625,True
+entropy,penultimate,-0.10275484655102202,0.0,0.0009765625,True
+entropy,last4_concat,-0.19003036456107877,0.0,0.0009765625,True
+drift,penultimate,-0.7999801327703008,1.0,0.00390625,True
+drift,last4_concat,-1.103598757330831,0.0,0.001953125,True
+procrustes,penultimate,-0.9708539188794232,0.0,0.001953125,True
+procrustes,last4_concat,-1.3058832601061394,0.0,0.001953125,True
