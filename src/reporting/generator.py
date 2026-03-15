@@ -26,13 +26,6 @@ class NotebookGenerator:
             nb = nbformat.read(f, as_version=4)
 
         # 2. Inject variables
-        # We look for the first code cell or a specific cell to inject parameters.
-        # Strategy: Prepend a new cell with the injected variables to ensure they override anything valid.
-        # Alternatively, we can replace the specific lines if we want to be cleaner, but prepending is robust
-        # for "parameterizing" notebooks without a strict tagging system like papermill.
-        # However, since the notebooks have hardcoded paths at the top, we want to replace those.
-        # Let's try to match lines starting with the variable name.
-        
         self._inject_variables(nb, replacements)
 
         # 3. Execute the notebook
@@ -51,19 +44,36 @@ class NotebookGenerator:
         with open(output_path, 'w', encoding='utf-8') as f:
             nbformat.write(nb, f)
 
+    def _normalize_path(self, value):
+        """
+        Converts Windows backslashes to forward slashes inside a path string.
+        This prevents Python SyntaxError caused by unicode escape sequences
+        like \\U, \\P, \\T when paths are injected as string literals in notebooks.
+
+        Example:
+            Input:  'C:\\Users\\alvar\\Documents\\TFG\\results\\file.csv'
+            Output: 'C:/Users/alvar/Documents/TFG/results/file.csv'
+
+        Python on Windows accepts forward slashes in all file operations
+        (open, pandas, os.path, etc.) so this is completely safe.
+        """
+        # Strip any surrounding quotes that may have been included in the value
+        stripped = value.strip()
+        
+        # Detect if the value is a quoted string (starts and ends with ' or ")
+        if (stripped.startswith("'") and stripped.endswith("'")) or \
+           (stripped.startswith('"') and stripped.endswith('"')):
+            quote_char = stripped[0]
+            inner = stripped[1:-1]
+            # Replace backslashes with forward slashes inside the string
+            inner_fixed = inner.replace('\\', '/')
+            return f"{quote_char}{inner_fixed}{quote_char}"
+        
+        # If it's not a simple quoted string (e.g. it's a code expression),
+        # return as-is — do not modify
+        return value
+
     def _inject_variables(self, nb, replacements):
-        # We'll inject a new cell at the top with the replacements. 
-        # This is the safest way to ensure our values take precedence, 
-        # provided the notebook doesn't overwrite them later with hardcoded values *without* checking if they exist.
-        # BUT, the existing notebooks DO have hardcoded values like `PHASE3_CSV = "..."`.
-        # So prepending `PHASE3_CSV = "new_path"` works IF the original code is conditional or if we remove the original lines.
-        # Since we are automating this, let's try to replace the content if we find the definition, 
-        # OR just prepend a cell and assume python will use the latest definition? 
-        # actually, if we prepend, the original code `PHASE3_CSV = ...` will execute LATER and overwrite our injection.
-        
-        # So we MUST APPEND a cell AFTER imports but BEFORE usage? 
-        # Or simpler: Iterating cells and replacing the lines.
-        
         for cell in nb.cells:
             if cell.cell_type == 'code':
                 lines = cell.source.split('\n')
@@ -71,28 +81,41 @@ class NotebookGenerator:
                 for line in lines:
                     replaced = False
                     for var_name, var_value in replacements.items():
-                        # Case 1: Variable assignment
-                        is_assignment = line.strip().startswith(f"{var_name} =") or line.strip().startswith(f"{var_name}=")
-                        # Case 2: Exact line match (for statements like sys.path.append)
+                        # Case 1: Variable assignment  (e.g.  PHASE3_CSV = "...")
+                        is_assignment = (
+                            line.strip().startswith(f"{var_name} =") or
+                            line.strip().startswith(f"{var_name}=")
+                        )
+                        # Case 2: Exact line match (e.g. sys.path.append('..'))
                         is_match = line.strip() == var_name
-                        
+
                         if is_assignment or is_match:
-                            # Capture leading whitespace
+                            # Preserve leading whitespace (indentation)
                             indent = line[:len(line) - len(line.lstrip())]
-                            
-                            # Comment out the old line
+
+                            # Comment out the original line
                             new_lines.append(f"{indent}# {line.strip()} # Replaced by generator")
-                            
-                            # Add the new line with indentation
+
                             if is_assignment:
-                                new_line = f"{indent}{var_name} = {var_value}"
+                                # FIX: normalize Windows backslashes before
+                                # writing into the notebook source.
+                                # Without this, paths like C:\Users\alvar
+                                # cause SyntaxError because \U is interpreted
+                                # as a unicode escape sequence.
+                                safe_value = self._normalize_path(var_value)
+                                new_line = f"{indent}{var_name} = {safe_value}"
                                 new_lines.append(new_line)
-                                self.logger.info(f"Replaced {var_name} with {var_value}")
+                                self.logger.info(f"Replaced {var_name} with {safe_value}")
                             else:
-                                new_lines.append(f"{indent}{var_value}")
+                                # For exact-line replacements (sys.path.append etc.)
+                                safe_value = self._normalize_path(var_value)
+                                new_lines.append(f"{indent}{safe_value}")
                                 self.logger.info(f"Replaced line matching {var_name}")
+
                             replaced = True
                             break
+
                     if not replaced:
                         new_lines.append(line)
+
                 cell.source = '\n'.join(new_lines)
