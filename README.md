@@ -244,4 +244,4 @@ I would like to thank my colleagues — Jaime Calventi, Hassan Chapra, and Eduar
 Although we worked on different topics, all within the broader framework of Semantic Framing and subspaces, our shared discussions and parallel progress significantly informed and enriched this work.
 
 ---
-Semantic Framing of Mental Health During COVID-19 - 10  April 2026
+**Semantic Framing of Mental Health During COVID-19 - 10  April 2026**
