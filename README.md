@@ -237,7 +237,7 @@ TFG/
 
 ## Acknowledgments
 
-This project builds upon the [**LISBETH**](https://github.com/alejandrommingo/LISBETH) computational framework, developed by [Prof. Alejandro Martínez-Mingo](https://github.com/alejandrommingo) for the analysis of semantic evolution in media discourse. The pipeline architecture, subspace analysis methodology, and framing metrics were adapted from this framework and applied to the study of COVID-19 and mental health media framing in Spanish press.
+This project builds upon the [**LISBETH**](https://github.com/alejandrommingo/LISBETH) computational framework, developed by Prof. Alejandro Martínez-Mingo for the analysis of semantic evolution in media discourse. The pipeline architecture, subspace analysis methodology, and framing metrics were adapted from this framework and applied to the study of COVID-19 and mental health media framing in Spanish press.
 
 I would like to thank my colleagues — Jaime Calventi, Hassan Chapra, and Eduardo Moreno — for their support and for the valuable insights they developed throughout their respective projects.
 
