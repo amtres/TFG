@@ -28,7 +28,6 @@ Each identified frame is statistically independent via orthogonality, allowing i
 During Phase 3, a convergence failure occurred in window 7 (September–November 2020) using NumPy's default LAPACK driver (`gesdd`). A **hybrid fallback mechanism** was implemented:
 1. Try fast `gesdd` driver (~99% of cases)
 2. If `LinAlgError`, fallback to SciPy's numerically stable `gesvd` driver
-3. As a last resort, clean NaN/Inf values and retry
 
 This guarantees convergence for rectangular matrices where divide-and-conquer methods fail.
 
