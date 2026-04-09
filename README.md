@@ -64,8 +64,8 @@ The system is orchestrated through a single master CLI: `pipeline_manager.py`.
 *Transforming text into calibrated mathematical representations.*
 
 #### 2.1 Model Management
-The system supports Hugging Face models optimized for Spanish:
-- **BETO** (`dccuchile/bert-base-spanish-wwm-uncased`): 12 transformer layers, d=768, Whole Word Masking. **Primary model used in this study.**
+The system supports any Hugging Face model:
+- **BETO** (`dccuchile/bert-base-spanish-wwm-uncased`): 12 transformer layers, d=768, Whole Word Masking. 
 
 #### 2.2 DAPT (Domain-Adaptive Pretraining)
 Before extracting embeddings, the base model is further pretrained on the collected corpus.
@@ -230,14 +230,18 @@ TFG/
 
 ## Data Storage & Backups
 
-- All project files are version-controlled **except large datasets**.
-- The **MH-strict dataset** is stored in this repository:
-  - `data/interim/datasets/spain_covidMHstrict_2020-03_2021-03_ALL.txt`
-- The **COVID broad dataset** is **not pushed to GitHub** (>100 MB). It is backed up as a ZIP in Google Drive.
+- All project files are version-controlled **except large datasets** (>100 MB).
 - Large harvesting outputs are ignored via `.gitignore`.
 
 ---
 
 ## Acknowledgments
 
-This project builds upon the **LISBETH** computational framework, originally developed by [Prof. Alejandro Martínez-Mingo](https://www.uned.es) (UNED) for the analysis of semantic evolution in media discourse. The pipeline architecture, subspace analysis methodology, and framing metrics were adapted from this framework and applied to the study of COVID-19 and mental health media framing in Spanish press.
+This project builds upon the [**LISBETH**](https://github.com/alejandrommingo/LISBETH) computational framework, developed by [Prof. Alejandro Martínez-Mingo](https://github.com/alejandrommingo) for the analysis of semantic evolution in media discourse. The pipeline architecture, subspace analysis methodology, and framing metrics were adapted from this framework and applied to the study of COVID-19 and mental health media framing in Spanish press.
+
+I would like to thank my colleagues — Jaime Calventi, Hassan Chapra, and Eduardo Moreno — for their support and for the valuable insights they developed throughout their respective projects.
+
+Although we worked on different topics, all within the broader framework of Semantic Framing and subspaces, our shared discussions and parallel progress significantly informed and enriched this work.
+
+---
+Semantic Framing of Mental Health During COVID-19 - 10  April 2026
