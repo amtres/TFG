@@ -246,7 +246,7 @@ Although we worked on different topics, all within the broader framework of Sema
 --
 ## Contact
 
-If you have any questions or suggestions, please feel free to contact me at [EMAIL_ADDRESS](amedina.ieu2022@student.ie.edu)
+If you have any questions or suggestions, please feel free to contact me at amedina.ieu2022@student.ie.edu
 
 ---
 **Semantic Framing of Mental Health During COVID-19 - 10  April 2026**
