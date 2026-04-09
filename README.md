@@ -2,7 +2,7 @@
 
 ## A Subspace Modeling Approach to Media Representation Analysis
 
-> **Final Degree Project (TFG) — Bachelor of Data and Business Analytics**
+> **Final Degree Project (TFG) — Bachelor in Data and Business Analytics**
 >
 > IE University · School of Science & Technology
 >
@@ -242,6 +242,11 @@ This project builds upon the [**LISBETH**](https://github.com/alejandrommingo/LI
 I would like to thank my colleagues — Jaime Calventi, Hassan Chapra, and Eduardo Moreno — for their support and for the valuable insights they developed throughout their respective projects.
 
 Although we worked on different topics, all within the broader framework of Semantic Framing and subspaces, our shared discussions and parallel progress significantly informed and enriched this work.
+
+--
+## Contact
+
+If you have any questions or suggestions, please feel free to contact me at [amedina.ieu2022@student.ie.edu]
 
 ---
 **Semantic Framing of Mental Health During COVID-19 - 10  April 2026**
